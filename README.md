@@ -1,14 +1,15 @@
-### INTRODUCTION
+### Introduction
 
 This project investigates the relationship between the occurrence of crime and the housing price in different areas of Queens. Generally, a safe neighborhood with lower crime rate would have higher property value. The dataset includes larceny, burgalry, assulault and sexual harrassment crime rate for each zipcode in Queens. We will explore which kind of crime has a greater effect on the sale price of a house. We will also use neighborhood information to make choropleth graphs to illustrate the sale price in Queens county as a whole.
 
 ---
 
-### DATA COLLECTION
+### Data Collection
 
 I use data originally collected from NYC Department of Finance on property sales in Queens County from January to December 2022. Also, I use NYC OpenData for valid felony, misdemeanor, and violation crimes reported to the New York City Police in December 2022. Further, I added population data for zipcodes in Queens from New York Demographics. After cleaning the data files, I calculate the crime rates for each zipcode in Queens and add them to the home sale file.
 To investigate how different type of crimes affect housing price, the linear regressioin model appears below:
-sale per sqft=β0 + β1*total units + β2*gross square feet + β3*property age + β4*larceny_rate + β5*assualt_rate + β6*harassment_rate + β7*burglary_rate + β8*population
+
+sale per sqft = β0 + β1*total units + β2*gross square feet + β3*property age + β4*larceny_rate + β5*assualt_rate + β6*harassment_rate + β7*burglary_rate + β8*population
 
 - total units: The total number of units at the listed property.
 - gross square feet: The total area of all the floors of a building, including the land area
@@ -22,9 +23,29 @@ sale per sqft=β0 + β1*total units + β2*gross square feet + β3*property age +
 <p align="center">
   <img src="images/H19.png" />
 </p>
+
 > Descriptive Statistics
 
 <p align="center">
   <img src="images/H20.png" />
 </p>
+
 > Histograms for crime rates
+
+---
+
+### Choropleth Graphs
+
+I used plotly to make choropleth graphs on the housing data. The neighborhood information is used to match the ids in Queens geojson file. The first graph shows the sale price per square foot in Queens County. In general, most property was sold between 500 and 1000 per square foot. The second graph shows the age of the properties at the time of sales. Well, it seems that a lot of properties sold are between 80 and 120 years old. In the middle of the map, the properties sold are relatively new.
+
+<p align="center">
+  <img src="images/H11.png" />
+</p>
+
+> Sale price in Queens
+
+<p align="center">
+  <img src="images/H12.png" />
+</p>
+
+> Age of Property Sold
