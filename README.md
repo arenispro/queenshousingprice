@@ -23,7 +23,8 @@ sale per sqft=β0 + β1*total units + β2*gross square feet + β3*property age +
   <img src="images/H19.png" />
 </p>
 > Descriptive Statistics
+
 <p align="center">
   <img src="images/H20.png" />
 </p>
->Histograms for crime rates
+> Histograms for crime rates
