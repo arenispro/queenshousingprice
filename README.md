@@ -59,3 +59,19 @@ I use seaborn to draw a heatmap for the correlation among home sale variables. T
 </p>
 
 > Correlation Table
+
+### Ridge and Lasso Model
+
+I apply polynomial features to my linear regression. Linear regression might not capture all the variance in the explanary variables. Then I use ridge regularization and lasso regularization to reduce variance in my models. Overall, my model does not predict the sale per square foot well. The coefficient of determination r-squared is as low as 0.18. With ridge regularization, the r-squared did improve a little and the ridge model is a better model to use for predication in my case. The red line in ridge model is more spread out and captures more variables than that in the lasso model.
+
+<p align="center">
+  <img src="images/H17.png" />
+</p>
+
+> Lasso Model
+
+<p align="center">
+  <img src="images/H18.png" />
+</p>
+
+> Ridge Model
