@@ -49,3 +49,13 @@ I used plotly to make choropleth graphs on the housing data. The neighborhood in
 </p>
 
 > Age of Property Sold
+
+### Correlation Heatmap
+
+I use seaborn to draw a heatmap for the correlation among home sale variables. The blue color means they are highly correlated. The lighter the color means they are not correlated with one another. It appears that sale price per square foot does not have a strong correlation with any other variables. Burglary crime has the greatest positive coefficient on sale price. Assualt and harrassment both have negative coefficent. It can be argued that wealthy suburbs attract more burglary. High burglary rate indicates that the area is wealthy. Larceny, assualt and harrassment are highly correlated with one another.
+
+<p align="center">
+  <img src="images/H21.png" />
+</p>
+
+> Correlation Table
